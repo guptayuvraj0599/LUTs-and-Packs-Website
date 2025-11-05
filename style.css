@@ -1,0 +1,245 @@
+:root {
+  --bg-dark: #0A0A0A;
+  --bg-card: #141414;
+  --accent-purple: #6A00FF;
+  --accent-light: #B366FF;
+  --text-gray: #B8B8B8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-dark);
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: var(--accent-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  z-index: 9999;
+}
+
+/* Particles Canvas */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 10px rgba(106, 0, 255, 0.3);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-purple);
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: radial-gradient(circle at top left, #6A00FF33, #0A0A0A 60%);
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5em;
+  text-shadow: 0 0 25px var(--accent-purple);
+}
+
+.hero p {
+  color: var(--text-gray);
+  margin: 15px 0 30px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.hero button {
+  padding: 12px 28px;
+  border: none;
+  background: var(--accent-purple);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  animation: pulse 3s infinite;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: var(--accent-light);
+}
+
+/* Pulse Effect */
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px var(--accent-purple); }
+  50% { box-shadow: 0 0 25px var(--accent-light); }
+  100% { box-shadow: 0 0 10px var(--accent-purple); }
+}
+
+/* Filters */
+.filters {
+  margin: 40px 0 10px;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 8px 18px;
+  border: 1px solid var(--accent-purple);
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background: var(--accent-purple);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  background: linear-gradient(#1A1A1A, #0F0F0F);
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, #6A00FF, #B366FF) 1;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotateY(3deg);
+  box-shadow: 0 0 30px #6A00FF55;
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 2px solid var(--accent-purple);
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.card p {
+  color: var(--text-gray);
+}
+
+.card a {
+  display: inline-block;
+  margin: 10px 0 20px;
+  background: var(--accent-purple);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: var(--accent-light);
+}
+
+/* About */
+.about {
+  padding: 80px 20px;
+  background: #0F0F0F;
+}
+
+.about h3 {
+  color: var(--accent-purple);
+  font-size: 1.8em;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: var(--text-gray);
+}
+
+/* Contact */
+.contact {
+  padding: 80px 20px;
+}
+
+.contact h3 {
+  color: var(--accent-purple);
+}
+
+.socials a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-purple);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: var(--accent-purple);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 15px;
+  color: var(--text-gray);
+  font-size: 0.9em;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reign Packs | LUTs & Editing Tools</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">Loading Reign Packs...</div>
+
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <h1>🎬 Reign Packs</h1>
+      <div class="nav-links">
+        <a href="#gallery">Packs</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" data-aos="fade-up">
+    <h2>Professional LUTs & Editing Packs</h2>
+    <p>Bring cinematic color and style to your edits — made by creators, for creators.</p>
+    <button onclick="scrollToGallery()">Explore Packs</button>
+  </header>
+
+  <!-- Filters -->
+  <div class="filters" data-aos="fade-up">
+    <button onclick="filter('all')">All</button>
+    <button onclick="filter('LUT')">LUTs</button>
+    <button onclick="filter('Transition')">Transitions</button>
+  </div>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery"></section>
+
+  <!-- About -->
+  <section id="about" class="about" data-aos="fade-up">
+    <h3>About Reign Packs</h3>
+    <p>
+      We create high-quality color grading LUTs, transitions, and effects that empower storytellers to
+      bring their creative visions to life. Built with passion by Yuvraj Gupta & team.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h3>Connect With Us</h3>
+    <p>Follow us for updates and new packs:</p>
+    <div class="socials">
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://youtube.com" target="_blank">YouTube</a>
+      <a href="mailto:contact@reignpacks.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Reign Rivals | Made by Yuvraj Gupta</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Cinematic LUT Pack Vol. 1",
+    "category": "Color Grading",
+    "thumbnail": "assets/images/lut1.jpg",
+    "download": "https://drive.google.com/your-lut-link",
+    "type": "LUT"
+  },
+  {
+    "name": "Smooth Transition Pack",
+    "category": "Video Transitions",
+    "thumbnail": "assets/images/transition.jpg",
+    "download": "https://drive.google.com/your-pack-link",
+    "type": "Transition"
+  },
+  {
+    "name": "Vlog LUTs Bundle",
+    "category": "Color Grading",
+    "thumbnail": "assets/images/lut2.jpg",
+    "download": "https://drive.google.com/your-link",
+    "type": "LUT"
+  }
+]
