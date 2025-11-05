@@ -19,5 +19,12 @@
     "thumbnail": "assets/images/lut2.jpg",
     "download": "https://drive.google.com/your-link",
     "type": "LUT"
+  },
+  {
+    "name": "Streaming Overlay Pack",
+    "category": "Overlays",
+    "thumbnail": "assets/images/overlays.jpg",
+    "download": "https://drive.google.com/your-link",
+    "type": "Overlay"
   }
 ]
